@@ -41,9 +41,6 @@
   backdrop-filter: blur(40px);
 }
 
-.buttonContainer {
-}
-
 .button {
   height: 96px;
   background: inherit;
@@ -66,9 +63,129 @@
 
   &__active {
     border-bottom: 3px solid var(--color-white, #fff);
+    transition: 0.3s;
   }
 
   &:hover {
     border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
   }
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburgerMenu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 87px auto;
+  row-gap: 48px;
+  position: fixed;
+  height: 100%;
+  width: 70%;
+  background: rgba(11, 13, 23, 0.15);
+  backdrop-filter: blur(40px);
+  z-index: 2000;
+  right: 0;
+}
+
+.humburgerCloseIconContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 33px;
+  padding-top: 33px;
+  height: fit-content;
+}
+
+.hamburgerButtonsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 22px);
+  justify-items: start;
+  row-gap: 32px;
+  padding-left: 32px;
+}
+
+.hamburgerButtonNumber {
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* desktop/text-preset-8-bold */
+  font-family: "Barlow Condensed";
+  font-size: var(--font-size-desktop-text-preset-8, 16px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.7px;
+}
+
+.hamburgerButton {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: fit-content;
+  background: inherit;
+  border: none;
+  border-right: 3px inherit;
+
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Barlow Condensed";
+  font-size: var(--font-size-desktop-text-preset-8, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: left;
+
+  &__active {
+    border-right: 3px solid var(--color-white, #fff);
+  }
+}
+
+@media (max-width: 992px) {
+  //769
+
+  .header {
+    margin-top: 0;
+  }
+  .headerLogoContainer {
+    padding-left: 20px;
+  }
+
+  .headerButtonsContainer {
+    padding-left: 25px;
+    padding-right: 15px;
+  }
+
+  .headerLine {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  //577
+  .header {
+  }
+
+  .headerLogoContainer {
+    margin: 24px;
+
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .headerButtonsContainer {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
 }

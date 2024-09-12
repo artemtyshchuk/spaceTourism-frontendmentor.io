@@ -11,7 +11,7 @@
         "test": "templates/default/TemplateName.test.tsx",
         "index": "templates/default/index.ts"
       },
-      "path": "src/components",
+      "path": "src/pages",
       "withLazy": false,
       "withStory": false,
       "withStyle": true,
