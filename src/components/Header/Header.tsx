@@ -15,7 +15,7 @@ export const Header = () => {
   return (
     <div className={styles.header}>
       <div className={styles.headerLogoContainer}>
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" onClick={() => navigate("/")} />
         <HamburgerIcon
           className={styles.hamburger}
           onClick={() => setHamburgerMenu(true)}

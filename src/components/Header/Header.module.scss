@@ -1,5 +1,6 @@
 .header {
   position: absolute;
+  top: 0;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -50,7 +51,7 @@
 
   /* desktop/text-preset-8 */
   font-family: "Barlow", sans-serif;
-  font-size: var(--font-size-desktop-text-preset-8, 16px);
+  font-size: 16px;
   font-style: normal;
   font-weight: 200;
   line-height: normal;
@@ -113,7 +114,7 @@
 
   /* desktop/text-preset-8-bold */
   font-family: "Barlow Condensed";
-  font-size: var(--font-size-desktop-text-preset-8, 16px);
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -132,7 +133,7 @@
   color: var(--color-white, #fff);
   font-feature-settings: "liga" off, "clig" off;
   font-family: "Barlow Condensed";
-  font-size: var(--font-size-desktop-text-preset-8, 16px);
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -166,8 +167,6 @@
 
 @media (max-width: 768px) {
   //577
-  .header {
-  }
 
   .headerLogoContainer {
     margin: 24px;

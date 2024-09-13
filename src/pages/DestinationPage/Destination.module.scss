@@ -1,0 +1,355 @@
+.destinationPage {
+  padding: 0 11%;
+  padding-top: 11%;
+  background-image: url("../../assets/background-images/destination/background-destination-desktop.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.titleNumber {
+  color: var(--color-white, #fff);
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.725px;
+  opacity: 0.25;
+  padding-right: 28px;
+}
+
+.title {
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* desktop/text-preset-5 */
+  font-family: "Barlow Condensed";
+  font-size: var(--font-size-desktop-text-preset-5, 28px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4px;
+}
+
+.planetInfoContainer {
+  padding-top: 7%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: auto;
+  min-height: 580px;
+  align-items: top;
+}
+
+.planetImage {
+  animation: rotate 160s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.planetName {
+  padding-top: 40px;
+  margin: 0;
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* desktop/text-preset-2 */
+  font-family: Bellefair;
+  font-size: var(--font-size-desktop-text-preset-2, 96px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.planetDescription {
+  padding-top: 16px;
+  margin: 0;
+  color: var(--color-blue-300, #d0d6f9);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* desktop/text-preset-9 */
+  font-family: Barlow;
+  font-size: var(--font-size-desktop-text-preset-9, 18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 32.4px */
+}
+
+.divider {
+  display: block;
+  margin: 40px 0;
+  width: 100%;
+  height: 1px;
+  opacity: 0.25;
+  background: var(--color-white, #fff);
+}
+
+.distanceContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+  justify-content: start;
+}
+
+.extraInfoTitle {
+  margin: 0;
+  color: var(--color-blue-300, #d0d6f9);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* desktop/text-preset-7 */
+  font-family: "Barlow Condensed";
+  font-size: var(--font-size-desktop-text-preset-7, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.extraInfoText {
+  padding-top: 12px;
+  margin: 0;
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* desktop/text-preset-6 */
+  font-family: Bellefair;
+  font-size: var(--font-size-desktop-text-preset-6, 28px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.button {
+  margin-right: 32px;
+  padding: 0 0 10px 0;
+  width: auto;
+  background: inherit;
+  border: none;
+  border-bottom: inherit;
+
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* desktop/text-preset-8 */
+  font-family: "Barlow";
+  font-size: var(--font-size-desktop-text-preset-8, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &__active {
+    border-bottom: 3px solid var(--color-white, #fff);
+  }
+}
+
+@media (max-width: 1439px) {
+  //1201
+  .planetInfoContainer {
+    padding-top: 5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  //993
+  .destinationPage {
+    padding: 0 5%;
+    padding-top: 15%;
+  }
+
+  .planetInfoContainer {
+    padding-top: 7%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 21px;
+  }
+}
+
+@media (max-width: 992px) {
+  //769
+
+  .destinationPage {
+    padding: 0 40px;
+    padding-top: 14%;
+    background-image: url("../../assets/background-images/destination/background-destination-tablet.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  .titleNumber {
+    color: var(--color-white, #fff);
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Barlow ";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3px;
+    padding-right: 24px;
+  }
+
+  .title {
+    color: var(--color-white, #fff);
+    font-feature-settings: "liga" off, "clig" off;
+
+    /* tablet/text-preset-5 */
+    font-family: "Barlow";
+    font-size: var(--font-size-tablet-text-preset-5, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+  }
+
+  .planetInfoContainer {
+    padding: 7% 10%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    height: 100%;
+  }
+
+  .planetImage {
+    width: 357px;
+    height: 357px;
+  }
+
+  .planetsButtons {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 44px;
+  }
+
+  .button {
+    margin-right: 0;
+  }
+
+  .planetName {
+    padding-top: 24px;
+    text-align: center;
+    font-size: var(--font-size-desktop-text-preset-2, 80px);
+    text-transform: uppercase;
+  }
+
+  .planetDescription {
+    text-align: center;
+  }
+
+  .distanceContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  //577
+}
+
+@media (max-width: 576px) {
+  .destinationPage {
+    padding: 0 10px;
+    padding-top: 30%;
+    background-image: url("../../assets/background-images/destination/background-destination-mobile.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  .titleNumber {
+    color: var(--color-white, #fff);
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Barlow Condensed";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    opacity: 0.25;
+    padding-right: 24px;
+  }
+
+  .title {
+    text-align: center;
+    color: var(--color-white, #fff);
+    font-feature-settings: "liga" off, "clig" off;
+
+    /* mobile/text-preset-6 */
+    font-family: "Barlow Condensed";
+    font-size: var(--font-size-mobile-text-preset-6, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.4px;
+  }
+  .planetInfoContainer {
+    padding: 10% 10px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    height: 100%;
+  }
+  .planetImage {
+    width: 157px;
+    height: 157px;
+  }
+
+  .planetsButtons {
+    gap: 24px;
+  }
+
+  .button {
+    font-size: var(--font-size-mobile-text-preset-8, 14px);
+    letter-spacing: 2.1px;
+  }
+
+  .planetName {
+    font-size: var(--font-size-desktop-text-preset-2, 56px);
+  }
+
+  .planetDescription {
+    font-size: var(--font-size-mobile-text-preset-9, 15px);
+    line-height: 180%; /* 27px */
+  }
+
+  .distanceContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 24px;
+    justify-items: center;
+  }
+  .divider {
+    margin: 24px 0;
+  }
+  .distanceContainer {
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .extraInfoTitle {
+    text-align: center;
+    font-size: var(--font-size-desktop-text-preset-7, 14px);
+  }
+
+  .extraInfoText {
+    text-align: center;
+    font-size: var(--font-size-desktop-text-preset-6, 28px);
+  }
+}
