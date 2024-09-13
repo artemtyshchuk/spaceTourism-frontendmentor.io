@@ -1,5 +1,5 @@
 .homePage {
-  background-image: url("../../assets/home/background-home-desktop.jpg");
+  background-image: url("../../assets/background-images/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -18,7 +18,6 @@
   color: var(--color-blue-300, #d0d6f9);
   font-feature-settings: "liga" off, "clig" off;
 
-  /* desktop/text-preset-5 */
   font-family: "Barlow";
   font-size: var(--font-size-desktop-text-preset-5, 28px);
   font-style: normal;
@@ -33,7 +32,6 @@
   color: var(--color-white, #fff);
   font-feature-settings: "liga" off, "clig" off;
 
-  /* desktop/text-preset-1 */
   font-family: Bellefair;
   font-size: var(--font-size-desktop-text-preset-1, 144px);
   font-style: normal;
@@ -47,12 +45,11 @@
   color: var(--color-blue-300, #d0d6f9);
   font-feature-settings: "liga" off, "clig" off;
 
-  /* desktop/text-preset-9 */
   font-family: Barlow;
   font-size: var(--font-size-desktop-text-preset-9, 18px);
   font-style: normal;
   font-weight: 400;
-  line-height: 180%; /* 32.4px */
+  line-height: 180%; 
 }
 
 .buttonContainer {
@@ -61,7 +58,7 @@
 }
 
 .button {
-  position: relative; /* Добавьте это */
+  position: relative; 
   display: flex;
   width: 272px;
   height: 272px;
@@ -133,7 +130,7 @@
   //769
 
   .homePage {
-    background-image: url("../../assets/home/background-home-tablet.jpg");
+    background-image: url("../../assets/background-images/home/background-home-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -185,7 +182,7 @@
 
 @media (max-width: 576px) {
   .homePage {
-    background-image: url("../../assets/home/background-home-mobile.jpg");
+    background-image: url("../../assets/background-images/home/background-home-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -210,7 +207,7 @@
 
   .description {
     font-size: 15px;
-    line-height: 180%; /* 27px */
+    line-height: 180%; 
   }
 
   .button {

@@ -1,12 +1,16 @@
 import styles from "./Header.module.scss";
 import { ReactComponent as CloseIcon } from "../../assets/shared/icon-close.svg";
 import { motion } from "framer-motion";
+import { useLocation, useNavigate } from "react-router";
 
 interface HamburgerMenuProps {
   onClose: () => void;
 }
 
 export const HamburgerMenu = ({ onClose }: HamburgerMenuProps) => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
   const variants = {
     hidden: {
       opacity: 0,
@@ -42,16 +46,40 @@ export const HamburgerMenu = ({ onClose }: HamburgerMenuProps) => {
         <CloseIcon />
       </div>
       <div className={styles.hamburgerButtonsContainer}>
-        <button className={styles.hamburgerButton}>
+        <button
+          className={`${styles.hamburgerButton} ${
+            location.pathname === "/" ? styles.hamburgerButton__active : ""
+          }`}
+          onClick={() => navigate("/")}
+        >
           <span className={styles.hamburgerButtonNumber}>00</span> Home
         </button>
-        <button className={styles.hamburgerButton}>
+        <button
+          className={`${styles.hamburgerButton} ${
+            location.pathname === "/destination"
+              ? styles.hamburgerButton__active
+              : ""
+          }`}
+          onClick={() => navigate("/destination")}
+        >
           <span className={styles.hamburgerButtonNumber}>01</span> Destination
         </button>
-        <button className={styles.hamburgerButton}>
+        <button
+          className={`${styles.hamburgerButton} ${
+            location.pathname === "/crew" ? styles.hamburgerButton__active : ""
+          }`}
+          onClick={() => navigate("/crew")}
+        >
           <span className={styles.hamburgerButtonNumber}>02</span> Crew
         </button>
-        <button className={styles.hamburgerButton}>
+        <button
+          className={`${styles.hamburgerButton} ${
+            location.pathname === "/technology"
+              ? styles.hamburgerButton__active
+              : ""
+          }`}
+          onClick={() => navigate("/technology")}
+        >
           <span className={styles.hamburgerButtonNumber}>03</span> Technology
         </button>
       </div>

@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router";
 import styles from "./HomePage.module.scss";
 
 export const HomePage = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className={styles.homePage}>
       <div className={styles.globalContainer}>
@@ -15,7 +19,7 @@ export const HomePage = () => {
           </p>
         </div>
         <div className={styles.buttonContainer}>
-          <button className={styles.button}>Explore</button>
+          <button className={styles.button} onClick={() => navigate("/destination")}>Explore</button>
         </div>
       </div>
     </div>
