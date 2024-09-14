@@ -1,1 +1,208 @@
-.crewPage {}
+.crewPage {
+  padding: 11%;
+  padding-bottom: 0;
+  background-image: url("../../assets/background-images/crew/background-crew-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.crewInfoWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 65px;
+  box-sizing: border-box;
+  align-items: start;
+}
+
+.personInfoContainer {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: auto;
+  min-height: 480px;
+}
+
+.personRank {
+  margin: 0;
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Bellefair;
+  font-size: var(--font-size-desktop-text-preset-4, 32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  opacity: 0.5042;
+}
+
+.personName {
+  padding-top: 16px;
+  margin: 0;
+  display: grid;
+
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Bellefair;
+  font-size: var(--font-size-desktop-text-preset-3, 56px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.personBio {
+  padding-top: 24px;
+  margin: 0;
+  color: var(--color-blue-300, #d0d6f9);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Barlow;
+  font-size: var(--font-size-desktop-text-preset-9, 17px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 32.4px */
+}
+
+.personImageContainer {
+  justify-self: center;
+  height: 690px;
+}
+
+.image {
+  height: 100%;
+}
+
+.dotsContainer {
+  margin-top: auto;
+  display: flex;
+  gap: 40px;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--color-white, #fff);
+  opacity: 0.17;
+  cursor: pointer;
+  &__active {
+    opacity: 1;
+  }
+}
+
+@media (hover: hover) {
+  .dot:hover {
+    opacity: 0.500094;
+  }
+}
+
+@media (hover: none) {
+  .dot {
+    opacity: 0.17;
+    &__active {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  //993
+  .crewPage {
+    padding: 15% 5%;
+    padding-bottom: 0;
+  }
+
+  .crewInfoWrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 65px;
+    box-sizing: border-box;
+    height: 40%;
+    align-items: start;
+  }
+}
+
+@media (max-width: 992px) {
+  //769
+  .crewPage {
+    padding: 14% 5%;
+    padding-bottom: 0;
+    background-image: url("../../assets/background-images/crew/background-crew-tablet.jpg");
+  }
+
+  .crewInfoWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+    align-items: start;
+  }
+
+  .personInfoContainer {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: auto;
+    min-height: 240px;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .dotsContainer {
+    margin-top: auto;
+    display: flex;
+    align-self: center;
+    justify-self: flex-end;
+    gap: 40px;
+  }
+
+  .personRank {
+    text-align: center;
+    font-size: var(--font-size-tablet-text-preset-4, 24px);
+  }
+
+  .personName {
+    text-align: center;
+    font-size: var(--font-size-tablet-text-preset-3, 40px);
+  }
+  .personBio {
+    text-align: center;
+    font-size: var(--font-size-tablet-text-preset-9, 16px);
+    line-height: 180%; /* 28.8px */
+  }
+
+  .personImageContainer {
+    justify-self: center;
+    height: 490px;
+  }
+}
+
+@media (max-width: 768px) {
+  //577
+}
+
+@media (max-width: 576px) {
+  .crewPage {
+    padding: 30% 10px;
+    padding-bottom: 0;
+    background-image: url("../../assets/background-images/crew/background-crew-tablet.jpg");
+  }
+  .personRank {
+    font-size: var(--font-size-mobile-text-preset-4, 18px);
+  }
+
+  .personName {
+    font-size: var(--font-size-mobile-text-preset-3, 24px);
+  }
+  .personBio {
+    font-size: var(--font-size-mobile-text-preset-9, 15px);
+  }
+
+  .dotsContainer {
+    margin-top: 30px;
+  }
+  .personImageContainer {
+    justify-self: center;
+    height: 290px;
+  }
+}

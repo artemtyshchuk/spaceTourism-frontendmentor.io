@@ -1,0 +1,81 @@
+.titleNumber {
+  color: var(--color-white, #fff);
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.725px;
+  opacity: 0.25;
+  padding-right: 28px;
+}
+
+.title {
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* desktop/text-preset-5 */
+  font-family: "Barlow Condensed";
+  font-size: var(--font-size-desktop-text-preset-5, 28px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4px;
+}
+
+@media (max-width: 992px) {
+  //769
+  .titleNumber {
+    color: var(--color-white, #fff);
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Barlow ";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3px;
+    padding-right: 24px;
+  }
+
+  .title {
+    color: var(--color-white, #fff);
+    font-feature-settings: "liga" off, "clig" off;
+
+    /* tablet/text-preset-5 */
+    font-family: "Barlow";
+    font-size: var(--font-size-tablet-text-preset-5, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 576px) {
+  .titleNumber {
+    color: var(--color-white, #fff);
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Barlow Condensed";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    opacity: 0.25;
+    padding-right: 24px;
+  }
+
+  .title {
+    text-align: center;
+    color: var(--color-white, #fff);
+    font-feature-settings: "liga" off, "clig" off;
+
+    /* mobile/text-preset-6 */
+    font-family: "Barlow Condensed";
+    font-size: var(--font-size-mobile-text-preset-6, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.4px;
+  }
+}

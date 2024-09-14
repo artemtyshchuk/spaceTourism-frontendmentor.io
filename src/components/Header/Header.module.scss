@@ -73,6 +73,19 @@
   }
 }
 
+.number {
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* desktop/text-preset-8-bold */
+  font-family: "Barlow Condensed";
+  font-size: var(--font-size-desktop-text-preset-8, 16px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.7px;
+}
+
 .hamburger {
   display: none;
 }
