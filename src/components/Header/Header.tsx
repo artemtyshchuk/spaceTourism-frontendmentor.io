@@ -36,7 +36,7 @@ export const Header = () => {
             }`}
             onClick={() => navigate("/")}
           >
-            00 Home
+            <span className={styles.number}>00</span> Home
           </button>
         </div>
         <div className={styles.buttonContainer}>
@@ -46,7 +46,7 @@ export const Header = () => {
             }`}
             onClick={() => navigate("/destination")}
           >
-            01 Destination
+            <span className={styles.number}>01</span> Destination
           </button>
         </div>
         <div
@@ -58,7 +58,7 @@ export const Header = () => {
               location.pathname === "/crew" ? styles.button__active : ""
             }`}
           >
-            02 Crew
+            <span className={styles.number}>02</span> Crew
           </button>
         </div>
         <div
@@ -70,7 +70,7 @@ export const Header = () => {
               location.pathname === "/technology" ? styles.button__active : ""
             }`}
           >
-            03 Technology
+            <span className={styles.number}>03</span> Technology
           </button>
         </div>
       </div>

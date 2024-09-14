@@ -3,6 +3,7 @@ import styles from "./Destination.module.scss";
 import { useEffect, useState } from "react";
 
 import { DestinationTypes } from "types";
+import { PageTitle } from "components/PageTitle/PageTitle";
 
 export const DestinationPage = () => {
   const { destination } = useDataFetch();
@@ -23,15 +24,15 @@ export const DestinationPage = () => {
 
   return (
     <div className={styles.destinationPage}>
-      <div className={styles.titleContainer}>
-        <p className={styles.title}>
-          <span className={styles.titleNumber}>01</span>PICK YOUR DESTINATION
-        </p>
-      </div>
+      <PageTitle number={"01"} title={"PICK YOUR DESTINATION"} />
 
       <div className={styles.planetInfoContainer}>
         <div className={styles.planetImageContainer}>
-          <img className={styles.planetImage} src={data.images.webp} alt="planet" />
+          <img
+            className={styles.planetImage}
+            src={data.images.webp}
+            alt="planet"
+          />
         </div>
         <div className={styles.planetInfoWrapper}>
           <div className={styles.planetsButtons}>
