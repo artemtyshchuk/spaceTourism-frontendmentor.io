@@ -52,21 +52,22 @@
   line-height: 180%;
 }
 
-.buttonContainer {
-  display: flex;
-  justify-content: flex-end;
-}
+// .buttonContainer {
+//   display: flex;
+//   justify-content: flex-end;
+// }
 
 .button {
-  position: relative;
   display: flex;
+  justify-content: flex-end;
+  position: relative;
   width: 272px;
   height: 272px;
   justify-content: center;
   align-items: center;
   gap: var(--spacing-100, 8px);
 
-  border-radius: 50%;
+  border-radius: 50% !important;
   border: 88px solid rgba(255, 255, 255, 0.1);
   background: var(--color-white, #fff);
 
