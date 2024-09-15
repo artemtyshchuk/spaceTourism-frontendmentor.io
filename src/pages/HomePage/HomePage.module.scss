@@ -66,7 +66,7 @@
   align-items: center;
   gap: var(--spacing-100, 8px);
 
-  border-radius: 999px;
+  border-radius: 50%;
   border: 88px solid rgba(255, 255, 255, 0.1);
   background: var(--color-white, #fff);
 
@@ -164,12 +164,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
   }
   .globalContainer {
     padding: 0 20px;
-    padding-top: 45%;
+    padding-top: 35%;
     row-gap: 119px;
   }
 
