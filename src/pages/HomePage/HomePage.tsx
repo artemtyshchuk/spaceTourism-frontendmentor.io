@@ -56,12 +56,14 @@ export const HomePage = () => {
             world experience!
           </motion.p>
         </div>
-        <button
+        <div className={styles.buttonContainer}>
+          <button
             className={styles.button}
             onClick={() => navigate("/destination")}
           >
             Explore
           </button>
+        </div>
       </div>
     </div>
   );
