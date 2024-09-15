@@ -66,7 +66,7 @@
   align-items: center;
   border-radius: 50%;
   background: var(--color-white, #fff);
-
+  border: none;
   color: var(--color-blue-900, #0b0d17);
   font-feature-settings: "liga" off, "clig" off;
   font-family: Bellefair;
@@ -157,12 +157,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100%;
+    height: 100vh;
   }
   .globalContainer {
     padding: 0 20px;
     padding-top: 35%;
-    row-gap: 119px;
+    row-gap: 80px;
   }
 
   .text {
@@ -182,6 +182,7 @@
 
   .button {
     border-radius: 50%;
+    font-size: 18px;
     width: 144px;
     height: 144px;
   }
