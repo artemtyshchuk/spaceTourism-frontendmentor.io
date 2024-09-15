@@ -44,7 +44,6 @@
   line-height: normal;
   text-transform: uppercase;
   cursor: pointer;
-  transition: 0.2s;
   &__active {
     background-color: var(--color-white, #fff);
     color: var(--color-black, #000);
