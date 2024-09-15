@@ -36,19 +36,36 @@ export const DestinationPage = () => {
     }),
   };
 
+  const variantsPlanets = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.2,
+        duration: 0.6,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
     <div className={styles.destinationPage}>
       <div className="pageContainer">
         <PageTitle number={"01"} title={"PICK YOUR DESTINATION"} />
 
         <div className={styles.planetInfoContainer}>
-          <div className={styles.planetImageContainer}>
+          <motion.div
+            className={styles.planetImageContainer}
+            variants={variantsPlanets}
+            initial="hidden"
+            animate="visible"
+          >
             <img
               className={styles.planetImage}
               src={data.images.webp}
               alt="planet"
             />
-          </div>
+          </motion.div>
 
           <div className={styles.planetInfoWrapper}>
             <div className={styles.planetsButtons}>

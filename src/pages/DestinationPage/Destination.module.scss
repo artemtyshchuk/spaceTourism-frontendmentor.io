@@ -4,7 +4,6 @@
   background-size: cover;
   min-height: 100vh;
   overflow: hidden;
-  padding-bottom: 25%;
 }
 
 .planetInfoContainer {
@@ -204,6 +203,7 @@
   .destinationPage {
     background-image: url("../../assets/background-images/destination/background-destination-mobile.jpg");
     height: 100vh;
+    padding-bottom: 45%;
   }
 
   .planetInfoContainer {
