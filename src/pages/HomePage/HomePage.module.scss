@@ -107,10 +107,6 @@
   }
 }
 
-@media (max-width: 1439px) {
-  //1201
-}
-
 @media (max-width: 1200px) {
   //993
   .globalContainer {
@@ -188,6 +184,7 @@
   }
 
   .button {
+    border-radius: 50%;
     width: 144px;
     height: 144px;
   }
