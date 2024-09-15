@@ -1,8 +1,10 @@
 .destinationPage {
   background-image: url("../../assets/background-images/destination/background-destination-desktop.jpg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  padding-bottom: 25%;
 }
 
 .planetInfoContainer {
@@ -112,7 +114,6 @@
   color: var(--color-white, #fff);
   font-feature-settings: "liga" off, "clig" off;
 
-  /* desktop/text-preset-8 */
   font-family: "Barlow";
   font-size: var(--font-size-desktop-text-preset-8, 16px);
   font-style: normal;
@@ -152,7 +153,7 @@
   //769
   .destinationPage {
     background-image: url("../../assets/background-images/destination/background-destination-tablet.jpg");
-    height: 100%;
+    height: 100vh;
   }
 
   .planetInfoContainer {
@@ -161,7 +162,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
     justify-items: center;
-    height: 100%;
+    height: 100vh;
   }
 
   .planetImage {
@@ -199,19 +200,14 @@
   }
 }
 
-@media (max-width: 768px) {
-  //577
-}
-
 @media (max-width: 576px) {
   .destinationPage {
     background-image: url("../../assets/background-images/destination/background-destination-mobile.jpg");
-    height: 100%;
+    height: 100vh;
   }
 
   .planetInfoContainer {
-    padding: 10% 10px;
-
+    padding: 0 10px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 200px 1fr;
