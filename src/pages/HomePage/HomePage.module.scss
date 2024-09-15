@@ -49,7 +49,7 @@
   font-size: var(--font-size-desktop-text-preset-9, 18px);
   font-style: normal;
   font-weight: 400;
-  line-height: 180%; 
+  line-height: 180%;
 }
 
 .buttonContainer {
@@ -58,7 +58,7 @@
 }
 
 .button {
-  position: relative; 
+  position: relative;
   display: flex;
   width: 272px;
   height: 272px;
@@ -70,7 +70,7 @@
   border: 88px solid rgba(255, 255, 255, 0.1);
   background: var(--color-white, #fff);
 
-  color: var(--color-blue-900, #0b0d1771);
+  color: var(--color-blue-900, #0b0d17);
   font-feature-settings: "liga" off, "clig" off;
   font-family: Bellefair;
   font-size: var(--font-size-desktop-text-preset-4, 32px);
@@ -91,13 +91,8 @@
     border-radius: 50%;
     opacity: 0;
     z-index: 1;
-
-    pointer-events: none;
-  }
-
-  &:hover::before {
-    opacity: 1;
     animation: ripple 1.5s infinite;
+    pointer-events: none;
   }
 
   @keyframes ripple {
@@ -153,23 +148,6 @@
   .description {
     text-align: center;
   }
-  .button {
-    color: var(--color-blue-900, #0b0d17);
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -50;
-      left: -50;
-      width: 300%;
-      height: 300%;
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 50%;
-      opacity: 0;
-      z-index: 1;
-      animation: ripple 1.5s infinite;
-    }
-  }
 }
 
 @media (max-width: 768px) {
@@ -191,7 +169,7 @@
   }
   .globalContainer {
     padding: 0 20px;
-    padding-top: 60%;
+    padding-top: 45%;
     row-gap: 119px;
   }
 
@@ -207,7 +185,7 @@
 
   .description {
     font-size: 15px;
-    line-height: 180%; 
+    line-height: 180%;
   }
 
   .button {

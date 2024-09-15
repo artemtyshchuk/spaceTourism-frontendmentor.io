@@ -1,35 +1,8 @@
 .destinationPage {
-  padding: 0 11%;
-  padding-top: 11%;
   background-image: url("../../assets/background-images/destination/background-destination-desktop.jpg");
   background-repeat: repeat;
   background-size: cover;
   height: 100%;
-}
-
-.titleNumber {
-  color: var(--color-white, #fff);
-  font-family: "Barlow Condensed";
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 4.725px;
-  opacity: 0.25;
-  padding-right: 28px;
-}
-
-.title {
-  color: var(--color-white, #fff);
-  font-feature-settings: "liga" off, "clig" off;
-
-  /* desktop/text-preset-5 */
-  font-family: "Barlow Condensed";
-  font-size: var(--font-size-desktop-text-preset-5, 28px);
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 4px;
 }
 
 .planetInfoContainer {
@@ -37,7 +10,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: auto;
-  min-height: 580px;
+  min-height: 520px;
   align-items: top;
 }
 
@@ -148,9 +121,14 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: 0.2s;
 
   &__active {
     border-bottom: 3px solid var(--color-white, #fff);
+  }
+  &:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    transition: 0.2s;
   }
 }
 
@@ -163,11 +141,6 @@
 
 @media (max-width: 1200px) {
   //993
-  .destinationPage {
-    padding: 0 5%;
-    padding-top: 15%;
-  }
-
   .planetInfoContainer {
     padding-top: 7%;
     display: grid;
@@ -178,43 +151,13 @@
 
 @media (max-width: 992px) {
   //769
-
   .destinationPage {
-    padding: 0 40px;
-    padding-top: 14%;
     background-image: url("../../assets/background-images/destination/background-destination-tablet.jpg");
-    background-repeat: repeat;
-    background-size: cover;
     height: 100%;
-  }
-  .titleNumber {
-    color: var(--color-white, #fff);
-    font-feature-settings: "liga" off, "clig" off;
-    font-family: "Barlow ";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 3px;
-    padding-right: 24px;
-  }
-
-  .title {
-    color: var(--color-white, #fff);
-    font-feature-settings: "liga" off, "clig" off;
-
-    /* tablet/text-preset-5 */
-    font-family: "Barlow";
-    font-size: var(--font-size-tablet-text-preset-5, 20px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 3px;
   }
 
   .planetInfoContainer {
     padding: 7% 10%;
-
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
@@ -263,48 +206,20 @@
 
 @media (max-width: 576px) {
   .destinationPage {
-    padding: 0 10px;
-    padding-top: 30%;
     background-image: url("../../assets/background-images/destination/background-destination-mobile.jpg");
-    background-repeat: repeat;
-    background-size: cover;
     height: 100%;
   }
-  .titleNumber {
-    color: var(--color-white, #fff);
-    font-feature-settings: "liga" off, "clig" off;
-    font-family: "Barlow Condensed";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2.4px;
-    opacity: 0.25;
-    padding-right: 24px;
-  }
 
-  .title {
-    text-align: center;
-    color: var(--color-white, #fff);
-    font-feature-settings: "liga" off, "clig" off;
-
-    /* mobile/text-preset-6 */
-    font-family: "Barlow Condensed";
-    font-size: var(--font-size-mobile-text-preset-6, 16px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 2.4px;
-  }
   .planetInfoContainer {
     padding: 10% 10px;
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: 200px 1fr;
     justify-items: center;
     height: 100%;
   }
+
   .planetImage {
     width: 157px;
     height: 157px;
@@ -338,6 +253,7 @@
   .divider {
     margin: 24px 0;
   }
+
   .distanceContainer {
     justify-content: center;
     justify-items: center;
