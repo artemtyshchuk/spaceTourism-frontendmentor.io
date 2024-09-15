@@ -1,0 +1,208 @@
+.technologyPage {
+  background-image: url("../../assets/background-images/technology/background-technology-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.technologyInfoWrapper {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  column-gap: 32px;
+}
+
+.technologyInfoContainer {
+  margin-top: 15%;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  column-gap: 64px;
+  min-height: 490px;
+  justify-content: center;
+}
+
+.buttonsContainer {
+  display: grid;
+  grid-template-rows: repeat(3, 80px);
+  gap: 32px;
+}
+
+.button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: transparent;
+  color: var(--color-white, #fff);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* desktop/text-preset-4 */
+  font-family: Bellefair;
+  font-size: var(--font-size-desktop-text-preset-4, 32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
+  &__active {
+    background-color: var(--color-white, #fff);
+    color: var(--color-black, #000);
+    border: none;
+  }
+  &:hover {
+    transition: 0.2s;
+    border: 1px solid var(--color-white, #fff);
+  }
+}
+
+.technologyName {
+  margin: 0;
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Bellefair;
+  font-size: var(--font-size-desktop-text-preset-4, 32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  opacity: 0.5042;
+}
+
+.technologyTitle {
+  padding-top: 16px;
+  margin: 0;
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Bellefair;
+  font-size: var(--font-size-desktop-text-preset-3, 56px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.technologyDescription {
+  padding-top: 24px;
+  margin: 0;
+  color: var(--color-blue-300, #d0d6f9);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Barlow;
+  font-size: var(--font-size-desktop-text-preset-9, 18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 32.4px */
+}
+
+.imageContainer {
+  height: 500px;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  //769
+  .technologyPage {
+    background-image: url("../../assets/background-images/technology/background-technology-tablet.jpg");
+  }
+  .technologyInfoWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto auto);
+    row-gap: 32px;
+  }
+
+  .technologyInfoContainer {
+    justify-items: center;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr;
+    row-gap: 20px;
+    min-height: 0;
+    justify-content: center;
+    grid-row: 2/3;
+  }
+
+  .imageContainer {
+    grid-row: 1/2;
+    height: fit-content;
+  }
+
+  .buttonsContainer {
+    display: grid;
+    grid-template-rows: 56px;
+    justify-items: center;
+    grid-template-columns: repeat(3, 56px);
+    column-gap: 32px;
+  }
+
+  .button {
+    width: 56px;
+    height: 56px;
+  }
+
+  .technologyName {
+    font-size: var(--font-size-tablet-text-preset-4, 24px);
+    text-align: center;
+  }
+  .technologyTitle {
+    font-size: var(--font-size-tablet-text-preset-3, 40px);
+    text-align: center;
+  }
+  .technologyDescription {
+    font-size: var(--font-size-tablet-text-preset-9, 16px);
+    line-height: 180%; /* 28.8px */
+    padding-top: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  //577
+}
+
+@media (max-width: 576px) {
+  .technologyPage {
+    background-image: url("../../assets/background-images/technology/background-technology-mobile.jpg");
+  }
+  .technologyInfoWrapper {
+    margin-top: 15%;
+  }
+  .technologyInfoContainer {
+    row-gap: 0;
+  }
+  .buttonsContainer {
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: repeat(3, 40px);
+    column-gap: 16px;
+    height: fit-content;
+  }
+  .button {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-mobile-text-preset-4, 18px);
+  }
+  .imageContainer {
+    height: 175px;
+  }
+  .image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .technologyName {
+    font-size: var(--font-size-mobile-text-preset-4, 18px);
+  }
+  .technologyTitle {
+    font-size: var(--font-size-mobile-text-preset-3, 24px);
+  }
+  .technologyDescription {
+    padding: 10px;
+    font-size: var(--font-size-mobile-text-preset-9, 15px);
+  }
+}

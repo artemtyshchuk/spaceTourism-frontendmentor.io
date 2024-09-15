@@ -50,7 +50,10 @@ export const HamburgerMenu = ({ onClose }: HamburgerMenuProps) => {
           className={`${styles.hamburgerButton} ${
             location.pathname === "/" ? styles.hamburgerButton__active : ""
           }`}
-          onClick={() => navigate("/")}
+          onClick={() => {
+            navigate("/");
+            onClose();
+          }}
         >
           <span className={styles.hamburgerButtonNumber}>00</span> Home
         </button>
@@ -60,7 +63,10 @@ export const HamburgerMenu = ({ onClose }: HamburgerMenuProps) => {
               ? styles.hamburgerButton__active
               : ""
           }`}
-          onClick={() => navigate("/destination")}
+          onClick={() => {
+            navigate("/destination");
+            onClose();
+          }}
         >
           <span className={styles.hamburgerButtonNumber}>01</span> Destination
         </button>
@@ -68,7 +74,10 @@ export const HamburgerMenu = ({ onClose }: HamburgerMenuProps) => {
           className={`${styles.hamburgerButton} ${
             location.pathname === "/crew" ? styles.hamburgerButton__active : ""
           }`}
-          onClick={() => navigate("/crew")}
+          onClick={() => {
+            navigate("/crew");
+            onClose();
+          }}
         >
           <span className={styles.hamburgerButtonNumber}>02</span> Crew
         </button>
@@ -78,7 +87,10 @@ export const HamburgerMenu = ({ onClose }: HamburgerMenuProps) => {
               ? styles.hamburgerButton__active
               : ""
           }`}
-          onClick={() => navigate("/technology")}
+          onClick={() => {
+            navigate("/technology");
+            onClose();
+          }}
         >
           <span className={styles.hamburgerButtonNumber}>03</span> Technology
         </button>

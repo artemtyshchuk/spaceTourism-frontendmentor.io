@@ -1,6 +1,4 @@
 .crewPage {
-  padding: 11%;
-  padding-bottom: 0;
   background-image: url("../../assets/background-images/crew/background-crew-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,7 +19,7 @@
   flex-direction: column;
   box-sizing: border-box;
   height: auto;
-  min-height: 480px;
+  height: 420px;
 }
 
 .personRank {
@@ -61,12 +59,11 @@
   font-size: var(--font-size-desktop-text-preset-9, 17px);
   font-style: normal;
   font-weight: 400;
-  line-height: 180%; /* 32.4px */
+  line-height: 180%;
 }
 
 .personImageContainer {
   justify-self: center;
-  height: 690px;
 }
 
 .image {
@@ -86,6 +83,7 @@
   background-color: var(--color-white, #fff);
   opacity: 0.17;
   cursor: pointer;
+  transition: 0.2s;
   &__active {
     opacity: 1;
   }
@@ -94,6 +92,7 @@
 @media (hover: hover) {
   .dot:hover {
     opacity: 0.500094;
+    transition: 0.2s;
   }
 }
 
@@ -108,10 +107,6 @@
 
 @media (max-width: 1200px) {
   //993
-  .crewPage {
-    padding: 15% 5%;
-    padding-bottom: 0;
-  }
 
   .crewInfoWrapper {
     display: grid;
@@ -126,14 +121,13 @@
 @media (max-width: 992px) {
   //769
   .crewPage {
-    padding: 14% 5%;
-    padding-bottom: 0;
     background-image: url("../../assets/background-images/crew/background-crew-tablet.jpg");
   }
 
   .crewInfoWrapper {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
     row-gap: 25px;
     align-items: start;
   }
@@ -142,9 +136,8 @@
     margin-top: 10%;
     display: flex;
     flex-direction: column;
+    height: 250px;
     box-sizing: border-box;
-    height: auto;
-    min-height: 240px;
     grid-template-rows: repeat(3, auto);
   }
 
@@ -165,10 +158,11 @@
     text-align: center;
     font-size: var(--font-size-tablet-text-preset-3, 40px);
   }
+
   .personBio {
     text-align: center;
     font-size: var(--font-size-tablet-text-preset-9, 16px);
-    line-height: 180%; /* 28.8px */
+    line-height: 180%;
   }
 
   .personImageContainer {
@@ -177,16 +171,11 @@
   }
 }
 
-@media (max-width: 768px) {
-  //577
-}
-
 @media (max-width: 576px) {
   .crewPage {
-    padding: 30% 10px;
-    padding-bottom: 0;
     background-image: url("../../assets/background-images/crew/background-crew-tablet.jpg");
   }
+
   .personRank {
     font-size: var(--font-size-mobile-text-preset-4, 18px);
   }
@@ -194,13 +183,20 @@
   .personName {
     font-size: var(--font-size-mobile-text-preset-3, 24px);
   }
+
   .personBio {
+    padding: 10px;
     font-size: var(--font-size-mobile-text-preset-9, 15px);
   }
 
-  .dotsContainer {
-    margin-top: 30px;
+  .personInfoContainer {
+    height: 280px;
   }
+
+  .dotsContainer {
+    margin-top: auto;
+  }
+
   .personImageContainer {
     justify-self: center;
     height: 290px;

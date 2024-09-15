@@ -15,7 +15,12 @@ export const Header = () => {
   return (
     <div className={styles.header}>
       <div className={styles.headerLogoContainer}>
-        <img src={logo} alt="logo" onClick={() => navigate("/")} />
+        <img
+          src={logo}
+          alt="logo"
+          onClick={() => navigate("/")}
+          style={{ cursor: "pointer" }}
+        />
         <HamburgerIcon
           className={styles.hamburger}
           onClick={() => setHamburgerMenu(true)}

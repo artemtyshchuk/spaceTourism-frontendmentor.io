@@ -3,6 +3,7 @@ import { Header } from "./components/Header";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { DestinationPage } from "pages/DestinationPage";
 import { CrewPage } from "pages/CrewPage";
+import { TechnologyPage } from "pages/TechnologyPage";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/crew",
         element: <CrewPage />,
+      },
+      {
+        path: "/technology",
+        element: <TechnologyPage />,
       },
     ],
   },
