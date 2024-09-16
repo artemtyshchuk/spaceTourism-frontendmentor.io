@@ -124,9 +124,21 @@
   &__active {
     border-bottom: 3px solid var(--color-white, #fff);
   }
-  &:hover {
+}
+
+@media (hover: hover) {
+  .button:hover {
     border-bottom: 3px solid rgba(255, 255, 255, 0.5);
     transition: 0.2s;
+  }
+}
+
+@media (hover: none) {
+  .button {
+    border-bottom: inherit;
+    &__active {
+      border-bottom: 3px solid var(--color-white, #fff);
+    }
   }
 }
 
