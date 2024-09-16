@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageTitle should render PageTitle 1`] = `
+<div
+  class="titleContainer"
+  data-testid="page-title"
+>
+  <p
+    class="title"
+  >
+    <span
+      class="titleNumber"
+    >
+      01
+    </span>
+    Test
+  </p>
+</div>
+`;

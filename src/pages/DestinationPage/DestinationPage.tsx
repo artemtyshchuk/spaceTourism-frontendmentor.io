@@ -49,7 +49,7 @@ export const DestinationPage = () => {
   };
 
   return (
-    <div className={styles.destinationPage}>
+    <div className={styles.destinationPage} data-testid="destination-page">
       <div className="pageContainer">
         <PageTitle number={"01"} title={"PICK YOUR DESTINATION"} />
 
@@ -121,11 +121,11 @@ export const DestinationPage = () => {
               variants={variants}
               custom={5}
             >
-              <div className={styles.avgDistanceContainer}>
+              <div className={styles.avgDistanceContainer} data-testid="distance">
                 <p className={styles.extraInfoTitle}>AVERAGE DISTANCE</p>
                 <p className={styles.extraInfoText}>{data.distance}</p>
               </div>
-              <div className={styles.estTravelTimeContainer}>
+              <div className={styles.estTravelTimeContainer} data-testid="time">
                 <p className={styles.extraInfoTitle}>EST. TRAVEL TIME</p>
                 <p className={styles.extraInfoText}>{data.travel}</p>
               </div>

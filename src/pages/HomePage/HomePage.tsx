@@ -22,7 +22,7 @@ export const HomePage = () => {
   };
 
   return (
-    <div className={styles.homePage}>
+    <div className={styles.homePage} data-testid="home-page">
       <div className={styles.globalContainer}>
         <div className={styles.textContainer}>
           <motion.p
@@ -49,6 +49,7 @@ export const HomePage = () => {
             initial="hidden"
             animate="visible"
             variants={textVariants}
+            data-testid="home-page-description"
           >
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.

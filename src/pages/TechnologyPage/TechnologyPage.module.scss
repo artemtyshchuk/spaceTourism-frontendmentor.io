@@ -150,10 +150,12 @@
     font-size: var(--font-size-tablet-text-preset-4, 24px);
     text-align: center;
   }
+
   .technologyTitle {
     font-size: var(--font-size-tablet-text-preset-3, 40px);
     text-align: center;
   }
+
   .technologyDescription {
     font-size: var(--font-size-tablet-text-preset-9, 16px);
     line-height: 180%; /* 28.8px */
@@ -162,20 +164,19 @@
   }
 }
 
-@media (max-width: 768px) {
-  //577
-}
-
 @media (max-width: 576px) {
   .technologyPage {
     background-image: url("../../assets/background-images/technology/background-technology-mobile.jpg");
   }
+
   .technologyInfoWrapper {
     margin-top: 15%;
   }
+
   .technologyInfoContainer {
     row-gap: 0;
   }
+
   .buttonsContainer {
     display: grid;
     grid-template-rows: 40px;
@@ -183,24 +184,30 @@
     column-gap: 16px;
     height: fit-content;
   }
+
   .button {
     width: 40px;
     height: 40px;
     font-size: var(--font-size-mobile-text-preset-4, 18px);
   }
+
   .imageContainer {
     height: 175px;
   }
+
   .image {
     height: 100%;
     object-fit: cover;
   }
+
   .technologyName {
     font-size: var(--font-size-mobile-text-preset-4, 18px);
   }
+
   .technologyTitle {
     font-size: var(--font-size-mobile-text-preset-3, 24px);
   }
+
   .technologyDescription {
     padding: 10px;
     font-size: var(--font-size-mobile-text-preset-9, 15px);

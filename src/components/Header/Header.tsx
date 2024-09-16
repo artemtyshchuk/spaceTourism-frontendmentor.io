@@ -18,7 +18,10 @@ export const Header = () => {
         <img
           src={logo}
           alt="logo"
-          onClick={() => navigate("/")}
+          onClick={() => {
+            navigate("/");
+            setHamburgerMenu(false);
+          }}
           style={{ cursor: "pointer" }}
         />
         <HamburgerIcon
