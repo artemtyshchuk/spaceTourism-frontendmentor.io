@@ -10,13 +10,13 @@ html {
 .pageContainer {
   padding: 11%;
   padding-bottom: 0;
-  height: 100vh;
+  height: 100%;
 }
 
 @media (max-width: 1200px) {
   .pageContainer {
     padding: 15% 5%;
-    padding-bottom: 0;
+    padding-bottom: 0%;
   }
 }
 

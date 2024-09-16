@@ -3,7 +3,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 .globalContainer {
@@ -76,7 +77,6 @@
   line-height: normal;
   text-transform: uppercase;
   cursor: pointer;
-
   &::before {
     content: "";
     position: absolute;
@@ -117,14 +117,6 @@
 @media (max-width: 992px) {
   //769
 
-  .homePage {
-    background-image: url("../../assets/background-images/home/background-home-tablet.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-  }
-
   .globalContainer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto auto);
@@ -153,11 +145,7 @@
 
 @media (max-width: 576px) {
   .homePage {
-    background-image: url("../../assets/background-images/home/background-home-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    padding-bottom: 20%;
   }
   .globalContainer {
     padding: 0 20px;

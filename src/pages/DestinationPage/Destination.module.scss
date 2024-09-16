@@ -2,15 +2,14 @@
   background-image: url("../../assets/background-images/destination/background-destination-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
-  overflow: hidden;
+  height: 100%;
 }
 
 .planetInfoContainer {
   padding-top: 7%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: auto;
+  // height: auto;
   min-height: 520px;
   align-items: top;
 }
@@ -150,13 +149,10 @@
 
 @media (max-width: 992px) {
   //769
-  .destinationPage {
-    background-image: url("../../assets/background-images/destination/background-destination-tablet.jpg");
-    height: 100vh;
-  }
 
   .planetInfoContainer {
     padding: 7% 10%;
+    padding-bottom: 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
@@ -173,7 +169,6 @@
     display: flex;
     justify-content: center;
     gap: 32px;
-    margin-top: 44px;
   }
 
   .button {
@@ -201,8 +196,6 @@
 
 @media (max-width: 576px) {
   .destinationPage {
-    background-image: url("../../assets/background-images/destination/background-destination-mobile.jpg");
-    height: 100vh;
     padding-bottom: 45%;
   }
 
@@ -216,11 +209,13 @@
   }
 
   .planetImage {
+    margin-top: 32px;
     width: 157px;
     height: 157px;
   }
 
   .planetsButtons {
+    margin-top: 32px;
     gap: 24px;
   }
 
